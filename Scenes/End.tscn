@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/donuts.tres" type="DynamicFont" id=1]
+
+[node name="Game Over" type="Node2D"]
+
+[node name="Message" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="Message"]
+margin_right = 1029.0
+margin_bottom = 602.0
+color = Color( 0.85098, 0.85098, 0.85098, 1 )
+
+[node name="ColorRect2" type="ColorRect" parent="Message"]
+margin_left = 384.0
+margin_top = 250.0
+margin_right = 640.0
+margin_bottom = 290.0
+color = Color( 0.968627, 0.819608, 0.819608, 1 )
+
+[node name="Label" type="Label" parent="Message"]
+margin_left = 3.3241
+margin_top = 255.956
+margin_right = 1022.32
+margin_bottom = 269.956
+custom_fonts/font = ExtResource( 1 )
+text = "Game Over!"
+align = 1
