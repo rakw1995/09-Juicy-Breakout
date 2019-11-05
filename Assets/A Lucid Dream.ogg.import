@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/A Lucid Dream.ogg-7aabb56b23e6a4ee24f3cd267b551adb.oggstr"
+
+[deps]
+
+source_file="res://Assets/A Lucid Dream.ogg"
+dest_files=[ "res://.import/A Lucid Dream.ogg-7aabb56b23e6a4ee24f3cd267b551adb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
