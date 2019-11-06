@@ -13,5 +13,6 @@ Here's the juice, and how I juiced it:
     - See above for details.
 * collision sound effects, found on opengameart.org
 * particles!
-* 
+* added a title screen with a start button
+    - child node > button and added a script so that it would start the game on mouse press.
 *
