@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/paddle.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/Ball.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Scenes/Tile.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Scenes/donuts.tres" type="DynamicFont" id=6]
+[ext_resource path="res://Assets/8b.tres" type="DynamicFont" id=6]
 [ext_resource path="res://Scripts/Score.gd" type="Script" id=7]
 [ext_resource path="res://Scripts/Lives.gd" type="Script" id=8]
 [ext_resource path="res://Assets/A Lucid Dream.ogg" type="AudioStream" id=9]
@@ -293,10 +293,10 @@ uppercase = true
 script = ExtResource( 7 )
 
 [node name="Lives" type="Label" parent="."]
-margin_left = 849.186
+margin_left = 813.0
 margin_top = 1.86427
-margin_right = 959.186
-margin_bottom = 31.8643
+margin_right = 951.0
+margin_bottom = 32.8643
 custom_fonts/font = ExtResource( 6 )
 text = "Lives:"
 uppercase = true
@@ -306,3 +306,4 @@ script = ExtResource( 8 )
 stream = ExtResource( 9 )
 volume_db = 4.0
 autoplay = true
+stream_paused = true
