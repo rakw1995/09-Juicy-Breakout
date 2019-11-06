@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Scenes/donuts.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Assets/8b.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Assets/GAMEOVER.tres" type="AudioStream" id=2]
 
 [node name="Game Over" type="Node2D"]
