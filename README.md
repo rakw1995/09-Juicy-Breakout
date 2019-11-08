@@ -23,9 +23,9 @@ Here's the juice, and how I juiced it:
 * tile, ball, and paddle sprites found at https://www.kenney.nl/assets/puzzle-pack 
     - I made some of my own adjustments to them using photoshop.
 * added rotation to the ball?
-    - 
+    - l
 * tile animations
-    -
+    - l
 * restart button
     - child node > button > added script so that "on mouse press" it would load the main scene.
     
