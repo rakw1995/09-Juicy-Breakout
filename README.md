@@ -14,9 +14,10 @@ Here's the juice, and how I juiced it:
     - I imported new font data and used custom fonts for the "label" text.
 * game over music, found at https://opengameart.org/content/music-box-game-over-iii
     - See above for details.
-* collision sound effects, found on opengameart.org
+* collision sound effects, found at https://opengameart.org/content/10-8bit-coin-sounds (because they didn't have good bounce sounds!)
+    - ball > child node > audio stream player
 * added sparkles for pizzazz! found at https://opengameart.org/content/magic-pixel-art
     - child node > particle2d 
 * added a title screen with a start button
     - child node > button and added a script so that it would start the game on mouse press.
-*
+* 
