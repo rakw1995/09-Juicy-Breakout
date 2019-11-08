@@ -1,21 +1,21 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Tile.gd" type="Script" id=1]
-[ext_resource path="res://Assets/graytile.png" type="Texture" id=2]
+[ext_resource path="res://Assets/yellowtile.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 31.6284, 12.2529 )
 
 [node name="Tile" type="StaticBody2D"]
-position = Vector2( 88, 383 )
+position = Vector2( 90.3327, 385.333 )
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.07, 0.08 )
+position = Vector2( 24.2695, -12.0355 )
+scale = Vector2( 1.0022, 0.740808 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 24.4933, -11.6635 )
 shape = SubResource( 1 )
+[connection signal="tree_entered" from="." to="." method="_on_Tile_tree_entered"]
