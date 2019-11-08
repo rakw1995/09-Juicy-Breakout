@@ -20,4 +20,12 @@ Here's the juice, and how I juiced it:
     - child node > particle2d 
 * added a title screen with a start button
     - child node > button and added a script so that it would start the game on mouse press.
-* 
+* tile, ball, and paddle sprites found at https://www.kenney.nl/assets/puzzle-pack 
+    - I made some of my own adjustments to them using photoshop.
+* added rotation to the ball?
+    - 
+* tile animations
+    -
+* restart button
+    - child node > button > added script so that "on mouse press" it would load the main scene.
+    
