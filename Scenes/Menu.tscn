@@ -1,10 +1,21 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/bg.png" type="Texture" id=2]
 [ext_resource path="res://Assets/A Lucid Dream.ogg" type="AudioStream" id=3]
 [ext_resource path="res://Assets/blocks.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Assets/8b.tres" type="DynamicFont" id=5]
+[ext_resource path="res://Assets/Magic Pixel Art/White Sparkle/White Sparkle1.png" type="Texture" id=6]
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 2
+emission_box_extents = Vector3( 400, 400, 200 )
+flag_disable_z = true
+gravity = Vector3( 0, -98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+hue_variation = -0.12
+hue_variation_random = 1.0
 
 [node name="Menu" type="Node2D"]
 script = ExtResource( 1 )
@@ -40,4 +51,11 @@ custom_colors/font_color_pressed = Color( 1, 1, 1, 1 )
 action_mode = 0
 text = "START GAME"
 flat = true
+
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 523.404, 298.534 )
+scale = Vector2( 1.5, 1.5 )
+amount = 20
+process_material = SubResource( 1 )
+texture = ExtResource( 6 )
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

@@ -16,7 +16,7 @@ func _physics_process(delta):
  var bodies = get_colliding_bodies()
  for body in bodies:
   if body.is_in_group("Tiles"):
-   emit_signal("score",body.score)
+   emit_signal("score",body.score) 
    body.queue_free()
   if body.get_name() == "Paddle":
    pass
@@ -24,3 +24,6 @@ func _physics_process(delta):
  if position.y > get_viewport_rect().end.y:
   emit_signal("lives")
   queue_free()
+
+
+
