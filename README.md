@@ -28,6 +28,7 @@ Here's the juice, and how I juiced it:
     - child node > animation player > animation > add "ball rotation" to animation tree.
 * tile animations
     - see above, except I changed the y values between animation steps instead of the angle this time.
-* restart button
-    - child node > button > added script so that "on mouse press" it would load the main scene.
+
+
+I hope you enjoy my game! I had a lot of fun making it!
     
