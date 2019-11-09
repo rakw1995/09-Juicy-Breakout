@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/World.gd" type="Script" id=1]
 [ext_resource path="res://Assets/bg.png" type="Texture" id=2]
@@ -16,7 +16,23 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 950.962, 197.43 )
 
-[sub_resource type="ParticlesMaterial" id=2]
+[sub_resource type="Animation" id=2]
+resource_name = "move"
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2.146, 1429.34 ), Vector2( 2.146, -4.292 ) ]
+}
+
+[sub_resource type="ParticlesMaterial" id=3]
 emission_shape = 2
 emission_box_extents = Vector3( 400, 400, 200 )
 flag_disable_z = true
@@ -44,12 +60,22 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="Paddle"]
-position = Vector2( 2.1456, -4.29242 )
+position = Vector2( 2.146, -4.292 )
 scale = Vector2( 18.2124, 16.7402 )
 texture = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Paddle"]
 shape = SubResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Paddle"]
+autoplay = "move"
+anims/move = SubResource( 2 )
 
 [node name="Ball" parent="." instance=ExtResource( 5 )]
 
@@ -65,7 +91,7 @@ polygon = PoolVector2Array( 0, 640, 0, 0, 1024, 0, 1024, 640, 1088, 640, 1088, -
 position = Vector2( 523.404, 298.534 )
 scale = Vector2( 1.5, 1.5 )
 amount = 20
-process_material = SubResource( 2 )
+process_material = SubResource( 3 )
 texture = ExtResource( 7 )
 
 [node name="Tiles" type="Node" parent="."]

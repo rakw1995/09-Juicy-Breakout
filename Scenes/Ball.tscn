@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/Ball.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Ball.png" type="Texture" id=2]
@@ -9,6 +9,21 @@ bounce = 1.0
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 10.1109
+
+[sub_resource type="Animation" id=3]
+resource_name = "rotation"
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:rotation_degrees")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.00772305, 0.980985 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 4.0 ]
+}
 
 [node name="Ball" type="RigidBody2D"]
 position = Vector2( 512, 480 )
@@ -25,8 +40,13 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0.292005, 0.291949 )
+rotation = 0.0698132
 scale = Vector2( 0.919422, 0.892877 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "rotation"
+anims/rotation = SubResource( 3 )
