@@ -8,6 +8,8 @@ The objective of breakout is to score points using a paddle to direct a ball tow
 Each color is worth a different number of points. 
 
 Here's the juice, and how I juiced it:
+* added backgrounds that I made in Photoshop.
+    - child node > texturerect
 * added music, found at https://opengameart.org/content/a-lucid-dream
     - I did this by adding a child node to the scene as an audio stream player.
 * added some fun fonts, found at http://dafont.com 
@@ -25,7 +27,7 @@ Here's the juice, and how I juiced it:
 * added rotation to the ball
     - child node > animation player > animation > add "ball rotation" to animation tree.
 * tile animations
-    - l
+    - see above, except I changed the y values between animation steps instead of the angle this time.
 * restart button
     - child node > button > added script so that "on mouse press" it would load the main scene.
     
