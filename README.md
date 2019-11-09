@@ -28,7 +28,8 @@ Here's the juice, and how I juiced it:
     - child node > animation player > animation > add "ball rotation" to animation tree.
 * tile animations
     - see above, except I changed the y values between animation steps instead of the angle this time.
-
+* customized the mouse cursor, found at https://www.kenney.nl/assets/pixel-ui-pack
+    - project settings > mouse cursor > custom image
 
 I hope you enjoy my game! I had a lot of fun making it!
     
