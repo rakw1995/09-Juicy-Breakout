@@ -22,8 +22,8 @@ Here's the juice, and how I juiced it:
     - child node > button and added a script so that it would start the game on mouse press.
 * tile, ball, and paddle sprites found at https://www.kenney.nl/assets/puzzle-pack 
     - I made some of my own adjustments to them using photoshop.
-* added rotation to the ball?
-    - l
+* added rotation to the ball
+    - child node > animation player > animation > add "ball rotation" to animation tree.
 * tile animations
     - l
 * restart button
