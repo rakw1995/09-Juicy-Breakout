@@ -1,5 +1,6 @@
 extends RigidBody2D
 
+
 export var maxspeed = 300
 
 signal lives
@@ -16,6 +17,7 @@ func _physics_process(delta):
  var bodies = get_colliding_bodies()
  for body in bodies:
   if body.is_in_group("Tiles"):
+   get_node("/root/World/coin").playing = true
    emit_signal("score",body.score) 
    body.queue_free()
   if body.get_name() == "Paddle":
